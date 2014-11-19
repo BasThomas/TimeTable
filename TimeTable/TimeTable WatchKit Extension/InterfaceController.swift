@@ -9,16 +9,32 @@
 import WatchKit
 import Foundation
 
-
 class InterfaceController: WKInterfaceController
 {
+    @IBOutlet weak var table: WKInterfaceTable!
+	var array: NSArray
+    
     override init(context: AnyObject?)
-    {
+	{
+		self.array = ["Test", "Another"]
+		super.init(context: context)
         // Initialize variables here.
-        super.init(context: context)
         
         // Configure interface objects here.
         println("Initializing \(self)")
+        
+        loadTableData()
+    }
+    
+    func loadTableData()
+    {
+		[self.table.setNumberOfRows(self.array.count, withRowType: "default")]
+		
+		for row in self.array
+		{
+			// Fill the table
+			
+		}
     }
 
     override func willActivate()

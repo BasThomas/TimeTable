@@ -10,7 +10,20 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TimeTable_Watch_App" customModuleProvider="target">
                     <items>
-                        <label alignment="left" text="Hello World" id="x1p-tG-7QF"/>
+                        <table alignment="left" layout="vertical" id="eNy-O9-0Zy">
+                            <items>
+                                <tableRow identifier="default" selectable="NO" id="Zfs-Bk-Ihu" customClass="CourseViewController" customModule="TimeTable">
+                                    <group key="rootItem" width="1" alignment="left" id="N8k-rT-6lt">
+                                        <items>
+                                            <label alignment="left" text="Label" id="qsr-cf-Erb"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="courseLabel" destination="qsr-cf-Erb" id="Gut-Tt-ups"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
                     </items>
                 </controller>
             </objects>

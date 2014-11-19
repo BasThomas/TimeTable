@@ -16,12 +16,12 @@
 		49A632621A1C80ED003025BB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A632611A1C80ED003025BB /* InterfaceController.swift */; };
 		49A632641A1C80ED003025BB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A632631A1C80ED003025BB /* NotificationController.swift */; };
 		49A632661A1C80ED003025BB /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A632651A1C80ED003025BB /* GlanceController.swift */; };
-		49A632681A1C80ED003025BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A632671A1C80ED003025BB /* Images.xcassets */; };
 		49A6326C1A1C80ED003025BB /* TimeTable Watch App.app in Resources */ = {isa = PBXBuildFile; fileRef = 49A6326B1A1C80ED003025BB /* TimeTable Watch App.app */; };
 		49A632751A1C80ED003025BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A632741A1C80ED003025BB /* Images.xcassets */; };
 		49A632781A1C80ED003025BB /* TimeTable WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 49A632591A1C80ED003025BB /* TimeTable WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		49A632801A1C8385003025BB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A632821A1C8385003025BB /* Interface.storyboard */; };
-		49A6328B1A1C8694003025BB /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A6328A1A1C8694003025BB /* ScheduleTableViewController.swift */; };
+		49B44A591A1C90AC00DF532A /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B44A581A1C90AC00DF532A /* ScheduleTableViewController.swift */; };
+		49B44A621A1CA85100DF532A /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B44A611A1CA85100DF532A /* CourseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +79,6 @@
 		49A632611A1C80ED003025BB /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		49A632631A1C80ED003025BB /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		49A632651A1C80ED003025BB /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
-		49A632671A1C80ED003025BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		49A6326B1A1C80ED003025BB /* TimeTable Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TimeTable Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A632711A1C80ED003025BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49A632741A1C80ED003025BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -89,7 +88,9 @@
 		49A632871A1C83F8003025BB /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
 		49A632881A1C83F8003025BB /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		49A632891A1C83F8003025BB /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Interface.strings; sourceTree = "<group>"; };
-		49A6328A1A1C8694003025BB /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleTableViewController.swift; path = ../ScheduleTableViewController.swift; sourceTree = "<group>"; };
+		49B44A581A1C90AC00DF532A /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
+		49B44A5B1A1C910800DF532A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		49B44A611A1CA85100DF532A /* CourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,10 +122,9 @@
 		49A632271A1C80D5003025BB = {
 			isa = PBXGroup;
 			children = (
-				49A632321A1C80D6003025BB /* TimeTable */,
-				49A632481A1C80D6003025BB /* TimeTableTests */,
-				49A6325D1A1C80ED003025BB /* TimeTable WatchKit Extension */,
+				49A632321A1C80D6003025BB /* TimeTable iOS App */,
 				49A6326F1A1C80ED003025BB /* TimeTable Watch App */,
+				49A632481A1C80D6003025BB /* TimeTableTests */,
 				49A6325A1A1C80ED003025BB /* Frameworks */,
 				49A632311A1C80D6003025BB /* Products */,
 			);
@@ -142,16 +142,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		49A632321A1C80D6003025BB /* TimeTable */ = {
+		49A632321A1C80D6003025BB /* TimeTable iOS App */ = {
 			isa = PBXGroup;
 			children = (
 				49A632351A1C80D6003025BB /* AppDelegate.swift */,
-				49A6328A1A1C8694003025BB /* ScheduleTableViewController.swift */,
+				49B44A581A1C90AC00DF532A /* ScheduleTableViewController.swift */,
 				49A632391A1C80D6003025BB /* Main.storyboard */,
 				49A6323C1A1C80D6003025BB /* Images.xcassets */,
 				49A6323E1A1C80D6003025BB /* LaunchScreen.xib */,
 				49A632331A1C80D6003025BB /* Supporting Files */,
 			);
+			name = "TimeTable iOS App";
 			path = TimeTable;
 			sourceTree = "<group>";
 		};
@@ -188,16 +189,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		49A6325D1A1C80ED003025BB /* TimeTable WatchKit Extension */ = {
+		49A6325D1A1C80ED003025BB /* Watch Extension */ = {
 			isa = PBXGroup;
 			children = (
-				49A632611A1C80ED003025BB /* InterfaceController.swift */,
-				49A632631A1C80ED003025BB /* NotificationController.swift */,
-				49A632651A1C80ED003025BB /* GlanceController.swift */,
-				49A632671A1C80ED003025BB /* Images.xcassets */,
+				49B44A5D1A1CA7B100DF532A /* Main App */,
+				49B44A5F1A1CA7CE00DF532A /* Notification */,
+				49B44A601A1CA7DB00DF532A /* Glance */,
 				49A6325E1A1C80ED003025BB /* Supporting Files */,
 			);
-			path = "TimeTable WatchKit Extension";
+			name = "Watch Extension";
+			path = "../TimeTable WatchKit Extension";
 			sourceTree = "<group>";
 		};
 		49A6325E1A1C80ED003025BB /* Supporting Files */ = {
@@ -212,19 +213,61 @@
 		49A6326F1A1C80ED003025BB /* TimeTable Watch App */ = {
 			isa = PBXGroup;
 			children = (
-				49A632821A1C8385003025BB /* Interface.storyboard */,
-				49A632741A1C80ED003025BB /* Images.xcassets */,
-				49A632701A1C80ED003025BB /* Supporting Files */,
+				49A6325D1A1C80ED003025BB /* Watch Extension */,
+				49B44A5C1A1CA69600DF532A /* Watch App */,
 			);
 			path = "TimeTable Watch App";
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		49A632701A1C80ED003025BB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				49A632711A1C80ED003025BB /* Info.plist */,
+				49A632741A1C80ED003025BB /* Images.xcassets */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49B44A5C1A1CA69600DF532A /* Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				49A632821A1C8385003025BB /* Interface.storyboard */,
+				49A632701A1C80ED003025BB /* Supporting Files */,
+			);
+			name = "Watch App";
+			sourceTree = "<group>";
+		};
+		49B44A5D1A1CA7B100DF532A /* Main App */ = {
+			isa = PBXGroup;
+			children = (
+				49A632611A1C80ED003025BB /* InterfaceController.swift */,
+				49B44A5E1A1CA7BC00DF532A /* Row Controllers */,
+			);
+			name = "Main App";
+			sourceTree = "<group>";
+		};
+		49B44A5E1A1CA7BC00DF532A /* Row Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				49B44A611A1CA85100DF532A /* CourseViewController.swift */,
+			);
+			name = "Row Controllers";
+			sourceTree = "<group>";
+		};
+		49B44A5F1A1CA7CE00DF532A /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				49A632631A1C80ED003025BB /* NotificationController.swift */,
+			);
+			name = Notification;
+			sourceTree = "<group>";
+		};
+		49B44A601A1CA7DB00DF532A /* Glance */ = {
+			isa = PBXGroup;
+			children = (
+				49A632651A1C80ED003025BB /* GlanceController.swift */,
+			);
+			name = Glance;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,7 +410,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49A632681A1C80ED003025BB /* Images.xcassets in Resources */,
 				49A6326C1A1C80ED003025BB /* TimeTable Watch App.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,8 +430,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49A6328B1A1C8694003025BB /* ScheduleTableViewController.swift in Sources */,
+				49B44A591A1C90AC00DF532A /* ScheduleTableViewController.swift in Sources */,
 				49A632361A1C80D6003025BB /* AppDelegate.swift in Sources */,
+				49B44A621A1CA85100DF532A /* CourseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +490,7 @@
 			children = (
 				49A6323F1A1C80D6003025BB /* Base */,
 				49A632881A1C83F8003025BB /* nl */,
+				49B44A5B1A1C910800DF532A /* en */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -672,6 +716,7 @@
 				49A632511A1C80D6003025BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49A632521A1C80D6003025BB /* Build configuration list for PBXNativeTarget "TimeTableTests" */ = {
 			isa = XCConfigurationList;
@@ -680,6 +725,7 @@
 				49A632541A1C80D6003025BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49A632791A1C80ED003025BB /* Build configuration list for PBXNativeTarget "TimeTable Watch App" */ = {
 			isa = XCConfigurationList;
@@ -688,6 +734,7 @@
 				49A6327B1A1C80ED003025BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49A6327C1A1C80ED003025BB /* Build configuration list for PBXNativeTarget "TimeTable WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -696,6 +743,7 @@
 				49A6327E1A1C80ED003025BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

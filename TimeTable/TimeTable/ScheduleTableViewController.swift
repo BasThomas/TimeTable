@@ -10,6 +10,18 @@ import UIKit
 
 class ScheduleTableViewController: UITableViewController
 {
+	var daysAhead: Int
+	var url: String
+	
+	required init(coder aDecoder: NSCoder)
+	{
+		// Do stuff.
+		self.daysAhead = 14 // Gets two weeks ahead + startOfWeek.
+		self.url = "https://apps.fhict.nl/api/v1/Schedule/me?expandTeacher=false&daysAhead=\(daysAhead)&IncludeStartOfWeek=true"
+		
+		super.init(coder: aDecoder)
+	}
+	
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -65,6 +77,6 @@ class ScheduleTableViewController: UITableViewController
 
     @IBAction func logout(sender: AnyObject)
     {
-        println("logging out.")
+        println("Logging out.")
     }
 }
