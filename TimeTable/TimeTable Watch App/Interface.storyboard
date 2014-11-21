@@ -10,21 +10,24 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TimeTable_Watch_App" customModuleProvider="target">
                     <items>
-                        <table alignment="left" layout="vertical" id="eNy-O9-0Zy">
+                        <table alignment="left" layout="vertical" id="KxQ-t7-2hj">
                             <items>
-                                <tableRow identifier="default" selectable="NO" id="Zfs-Bk-Ihu" customClass="CourseViewController" customModule="TimeTable">
-                                    <group key="rootItem" width="1" alignment="left" id="N8k-rT-6lt">
+                                <tableRow identifier="default" selectable="NO" id="FGZ-Bc-jtV" customClass="RowController" customModule="TimeTable_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="j50-Eo-3EH">
                                         <items>
-                                            <label alignment="left" text="Label" id="qsr-cf-Erb"/>
+                                            <label alignment="left" text="Label" id="Ugv-NV-aWV"/>
                                         </items>
                                     </group>
                                     <connections>
-                                        <outlet property="courseLabel" destination="qsr-cf-Erb" id="Gut-Tt-ups"/>
+                                        <outlet property="label" destination="Ugv-NV-aWV" id="02b-KY-njI"/>
                                     </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
+                    <connections>
+                        <outlet property="table" destination="KxQ-t7-2hj" id="EPl-Dd-fGx"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>

@@ -2,7 +2,7 @@
 //  GlanceController.swift
 //  TimeTable WatchKit Extension
 //
-//  Created by Bas Broek on 19/11/2014.
+//  Created by Bas Broek on 21/11/2014.
 //  Copyright (c) 2014 Bas Broek. All rights reserved.
 //
 
@@ -10,28 +10,26 @@ import WatchKit
 import Foundation
 
 
-class GlanceController: WKInterfaceController
-{
-    override init(context: AnyObject?)
-    {
+class GlanceController: WKInterfaceController {
+
+    override init(context: AnyObject?) {
         // Initialize variables here.
         super.init(context: context)
         
         // Configure interface objects here.
-        println("Initializing \(self)")
+        NSLog("%@ init", self)
     }
-    
-    override func willActivate()
-    {
+
+    override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
-        println("Will activate \(self)")
+        NSLog("%@ will activate", self)
     }
-    
-    override func didDeactivate()
-    {
+
+    override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
-        println("Did deactivate \(self)")
+        NSLog("%@ did deactivate", self)
         super.didDeactivate()
     }
+
 }
